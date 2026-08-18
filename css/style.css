@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eff5f3; 
+    margin: 0;
+    padding: 0;
+    color: #666;
+    /* Trava a tela inteira, impossibilitando a página de descer */
+    overflow: hidden; 
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: #3bb889;
+    padding: 15px 40px;
+    width: 65%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* ================= MAIN & TÍTULO ================= */
+main {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    color: #666;
+    font-size: 46px;
+    text-transform: uppercase;
+    /* Margem menor para subir o conteúdo um pouco */
+    margin-bottom: 25px; 
+}
+
+/* ================= CONTAINER DA IMAGEM E TEXTO ================= */
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* A IMAGEM FIXA */
+.content-container img {
+    width: 280px;
+    height: 420px;
+    object-fit: cover;
+    
+    /* Puxa a imagem para cima e enquadra o topo da foto */
+    margin-top: -15px;
+    object-position: top;
+    
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.content-container img:hover {
+    transform: scale(1.02); /* Dá um zoom leve ao passar o mouse */
+}
+
+/* O TEXTO AO LADO */
+.texto-display {
+    flex: 1;
+}
+
+.texto-display h2 {
+    font-family: 'Playfair Display', serif;
+    color: #8b5a2b; 
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.texto-display p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Animação do texto ao surgir */
+.texto-display.fade-in {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
