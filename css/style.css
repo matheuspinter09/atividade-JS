@@ -13,7 +13,6 @@ body {
     overflow: hidden; 
 }
 
-/* ================= HEADER ================= */
 header {
     background-color: #3bb889;
     padding: 15px 40px;
@@ -39,7 +38,6 @@ nav a {
     letter-spacing: 1px;
 }
 
-/* ================= MAIN & TÍTULO ================= */
 main {
     max-width: 1050px;
     margin: 40px auto;
@@ -55,20 +53,19 @@ main {
     margin-bottom: 30px; 
 }
 
-/* ================= CONTAINER DA IMAGEM E TEXTO ================= */
+
 .content-container {
     display: flex;
-    align-items: stretch; /* Estica a coluna para acompanhar a altura do texto */
+    align-items: stretch;
     gap: 40px;
 }
 
-/* IMAGEM DEFORMADA E COM BORDA QUADRADA */
 .content-container img {
     width: 320px;
-    height: 100%; /* Ocupa toda a altura do container */
+    height: 100%; 
     min-height: 380px;
-    object-fit: fill; /* DEFORMA a imagem para preencher o espaço sem cortar */
-    border-radius: 0; /* BORDA QUADRADA */
+    object-fit: fill;
+    border-radius: 0;
     margin-top: 0;
     cursor: pointer;
     transition: opacity 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
@@ -81,7 +78,6 @@ main {
     box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
-/* O TEXTO AO LADO */
 .texto-display {
     flex: 1;
     padding-top: 4px;
@@ -102,7 +98,6 @@ main {
     color: #555;
 }
 
-/* Animação do texto ao surgir */
 .texto-display.fade-in {
     animation: fadeIn 0.35s ease forwards;
 }
