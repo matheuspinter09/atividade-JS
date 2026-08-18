@@ -10,7 +10,6 @@ body {
     margin: 0;
     padding: 0;
     color: #666;
-    /* Trava a tela inteira, impossibilitando a página de descer */
     overflow: hidden; 
 }
 
@@ -50,42 +49,42 @@ main {
 .main-title {
     font-family: 'Playfair Display', serif;
     color: #666;
-    font-size: 46px;
+    font-size: 42px;
     text-transform: uppercase;
-    /* Margem menor para subir o conteúdo um pouco */
-    margin-bottom: 25px; 
+    margin-top: 0;
+    margin-bottom: 30px; 
 }
 
 /* ================= CONTAINER DA IMAGEM E TEXTO ================= */
 .content-container {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch; /* Estica a coluna para acompanhar a altura do texto */
     gap: 40px;
 }
 
-/* A IMAGEM FIXA */
+/* IMAGEM DEFORMADA E COM BORDA QUADRADA */
 .content-container img {
-    width: 280px;
-    height: 420px;
-    object-fit: cover;
-    
-    /* Puxa a imagem para cima e enquadra o topo da foto */
-    margin-top: -15px;
-    object-position: top;
-    
+    width: 320px;
+    height: 100%; /* Ocupa toda a altura do container */
+    min-height: 380px;
+    object-fit: fill; /* DEFORMA a imagem para preencher o espaço sem cortar */
+    border-radius: 0; /* BORDA QUADRADA */
+    margin-top: 0;
     cursor: pointer;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: opacity 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
     flex-shrink: 0;
 }
 
 .content-container img:hover {
-    transform: scale(1.02); /* Dá um zoom leve ao passar o mouse */
+    transform: scale(1.01);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
 /* O TEXTO AO LADO */
 .texto-display {
     flex: 1;
+    padding-top: 4px;
 }
 
 .texto-display h2 {
@@ -100,17 +99,18 @@ main {
     line-height: 1.6;
     margin-bottom: 15px;
     font-size: 15px;
+    color: #555;
 }
 
 /* Animação do texto ao surgir */
 .texto-display.fade-in {
-    animation: fadeIn 0.4s ease forwards;
+    animation: fadeIn 0.35s ease forwards;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(8px);
     }
     to {
         opacity: 1;

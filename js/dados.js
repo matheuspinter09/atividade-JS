@@ -1,32 +1,34 @@
 const conteudos = [
     {
-        id: "natureza",
-        titulo: "NATUREZA:",
+        id: "florestas",
+        titulo: "🌲 FLORESTA:",
         imagem: "./assets/a5ae2edd2c7a023b71c4730d81cf9acbe33071f6.png",
         alt: "Árvores em uma floresta",
         texto: `
             <p>
-                Explorar a natureza é uma atividade incrível que pode proporcionar uma série de benefícios
-                físicos e mentais. Ao estar em contato com a natureza, é possível reduzir o estresse, aumentar a
-                criatividade e melhorar o bem-estar geral.
+                As florestas são ecossistemas complexos e diversificados, que oferecem uma ampla gama de
+                benefícios ecológicos, sociais e econômicos. As florestas podem ser exploradas de muitas
+                maneiras, desde atividades de recreação, como caminhadas e acampamentos, até a colheita
+                sustentável de recursos florestais, como madeira e produtos não madeireiros, como frutas e
+                plantas medicinais.
             </p>
             <p>
-                Além disso, a natureza oferece um ambiente diverso e fascinante para se explorar, com muitas
-                espécies de plantas e animais para serem observados. Caminhadas em trilhas, escaladas,
-                mergulhos e passeios de barco são algumas das atividades que
-                podem ser realizadas para se conectar com a natureza.
+                Além disso, as florestas são o lar de muitas espécies de animais e plantas, algumas delas
+                ameaçadas de extinção, e têm um papel fundamental na manutenção do equilíbrio climático
+                global, contribuindo para a regulação do clima e para a proteção da biodiversidade.
             </p>
             <p>
-                É importante lembrar, no entanto, que devemos explorar a natureza de forma consciente e
-                responsável, respeitando o meio ambiente e as criaturas que nele habitam. Dessa forma,
-                podemos desfrutar de todos os benefícios que a natureza tem a oferecer enquanto também
-                ajudamos a proteger esse ambiente valioso para as gerações futuras.
+                No entanto, a exploração humana das florestas também pode ter um grande impacto negativo
+                no meio ambiente, especialmente quando é feita de maneira irresponsável. A exploração ilegal
+                de madeira, a expansão da agricultura e a mineração são algumas das atividades que podem
+                levar ao desmatamento, à perda de biodiversidade e ao aumento da emissão de gases do
+                efeito estufa.
             </p>
         `
     },
     {
         id: "praias",
-        titulo: "PRAIAS:",
+        titulo: "🏖️ PRAIA:",
         imagem: "./assets/2aeaa31ea52172ed5fe569b9922911c34ab07d82.png",
         alt: "Praia",
         texto: `
@@ -52,7 +54,7 @@ const conteudos = [
     },
     {
         id: "montanhas",
-        titulo: "MONTANHAS:",
+        titulo: "🏔️ MONTANHAS:",
         imagem: "./assets/198a97169943f3ce834c8e0a3ceecc05cac4fb94.png",
         alt: "Montanhas",
         texto: `
@@ -73,19 +75,27 @@ const conteudos = [
         `
     },
     {
-        id: "florestas",
-        titulo: "FLORESTAS:",
+        id: "natureza",
+        titulo: "🌳 NATUREZA:",
         imagem: "./assets/48db00c632831e46a91071b5a79ff625cdc6e329.png",
-        alt: "Floresta",
+        alt: "Natureza",
         texto: `
             <p>
-                As florestas são ambientes ricos em biodiversidade e
-                fundamentais para o equilíbrio do planeta.
+                Explorar a natureza é uma atividade incrível que pode proporcionar uma série de benefícios
+                físicos e mentais. Ao estar em contato com a natureza, é possível reduzir o estresse, aumentar a
+                criatividade e melhorar o bem-estar geral.
             </p>
             <p>
-                Elas abrigam inúmeras espécies de plantas e animais
-                e contribuem para a qualidade do ar e para a
-                conservação da água.
+                Além disso, a natureza oferece um ambiente diverso e fascinante para se explorar, com muitas
+                espécies de plantas e animais para serem observados. Caminhadas em trilhas,
+                acampamentos, escaladas, mergulhos e passeios de barco são algumas das atividades que
+                podem ser realizadas para se conectar com a natureza.
+            </p>
+            <p>
+                É importante lembrar, no entanto, que devemos explorar a natureza de forma consciente e
+                responsável, respeitando o meio ambiente e as criaturas que nele habitam. Dessa forma,
+                podemos desfrutar de todos os benefícios que a natureza tem a oferecer enquanto também
+                ajudamos a proteger esse ambiente valioso para as gerações futuras.
             </p>
         `
     }
